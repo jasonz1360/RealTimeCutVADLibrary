@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.swift_version    = '5.0'
   s.source_files     = 'RealTimeCutVADLibrary/src/**/*.{h,m}', 'RealTimeCutVADLibrary/src/cpp/**/*.{h,cpp}'
   s.public_header_files = 'RealTimeCutVADLibrary/src/include/VADWrapper.h'
-  s.resources = ['RealTimeCutVADLibrary/src/Resources/**/*']
+  # s.resources = ['RealTimeCutVADLibrary/src/Resources/**/*']
   
   s.prepare_command = <<-CMD
   curl -LO https://github.com/helloooideeeeea/RealTimeCutVADLibraryForXCFramework/releases/download/v1.0.6/onnxruntime.xcframework.zip

@@ -23,9 +23,9 @@ let package = Package(
     ],
     path: "RealTimeCutVADLibrary/src",
     sources: ["include", ".", "cpp"],
-    resources: [
-        .process("Resources")
-    ],
+    // resources: [
+    //     .process("Resources")
+    // ],
     publicHeadersPath: "include"
 ),
         .binaryTarget(

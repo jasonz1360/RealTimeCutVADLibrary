@@ -49,7 +49,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Frameworks/README.txt,
-			);
+											);
 			publicHeaders = (
 				src/include/VADWrapper.h,
 			);
