@@ -1,5 +1,5 @@
 #import "VADWrapper.h"
-#import <RealTimeCutVADCXXLibrary/RealTimeCutVADCXXLibrary.h>
+#import "cpp/RealTimeCutVADCXXLibrary.h"
 
 @interface VADWrapper()
 

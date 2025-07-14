@@ -15,19 +15,19 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(
-            name: "RealTimeCutVADLibrary",
-            dependencies: [
-                .target(name: "onnxruntime"),
-                .target(name: "webrtc_audio_processing")
-            ],
-            path: "RealTimeCutVADLibrary/src",
-            sources: nil,
-            resources: [
-                .process("Resources")
-            ],
-            publicHeadersPath: "include"
-        ),
+.target(
+    name: "RealTimeCutVADLibrary",
+    dependencies: [
+        .target(name: "onnxruntime"),
+        .target(name: "webrtc_audio_processing")
+    ],
+    path: "RealTimeCutVADLibrary/src",
+    sources: ["include", ".", "cpp"],
+    resources: [
+        .process("Resources")
+    ],
+    publicHeadersPath: "include"
+),
         .binaryTarget(
             name: "onnxruntime",
             url: "https://github.com/helloooideeeeea/RealTimeCutVADLibraryForXCFramework/releases/download/v1.0.6/onnxruntime.xcframework.zip",
